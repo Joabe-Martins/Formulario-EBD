@@ -1,6 +1,6 @@
 // URL do seu Google Apps Script para integração com a planilha
 // Substitua o link abaixo pelo link da sua integração (Google Apps Script publicado como Web App)
-const scriptURL = 'https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbybaj3gDaHUWfqWGd7gNvWtMDK1haERjmZbt31YFh67SmearzrpLgXX0Ztvhe4B3NgTZQ/exec'; // INSIRA AQUI O SEU LINK DE INTEGRAÇÃO
+const scriptURL = "https://script.google.com/macros/s/AKfycbxlyEvla8ucJ9FW4-3eiEkD95fIKYxZmxqLNSiMXvS7if93vXzw37ixE3ZTdvQEZBNl/exec"; // INSIRA AQUI O SEU LINK DE INTEGRAÇÃO
 
 const form = document.getElementById('myForm');
 

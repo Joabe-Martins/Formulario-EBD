@@ -40,22 +40,9 @@ body {
     border-radius: 4px;
   }
   
-  input[type="submit"] {
+  /* Estilizando o botão de envio corretamente */
+#submitBtn, input[type="submit"] {
     width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #218838;
-  }
-  /* Estilo bonito para o botão */
-#submitBtn {
     background: linear-gradient(135deg, #000, #333); /* Degradê elegante */
     color: white;
     padding: 12px 24px;
@@ -69,16 +56,16 @@ body {
 }
 
 /* Efeito ao passar o mouse */
-#submitBtn:hover {
+#submitBtn:hover, input[type="submit"]:hover {
     background: linear-gradient(135deg, #222, #444);
     transform: scale(1.05);
 }
 
 /* Estilo do botão quando está desativado */
-#submitBtn:disabled {
-    background: linear-gradient(135deg, #555, #777); /* Mantém um degradê */
+#submitBtn:disabled, input[type="submit"]:disabled {
+    background: linear-gradient(135deg, #555, #777);
     color: #ddd;
     cursor: not-allowed;
     opacity: 0.9;
-    transform: none; /* Evita a animação ao desativar */
+    transform: none;
 }

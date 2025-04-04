@@ -1,6 +1,6 @@
 /* ---------- Estilo para a página de agradecimento ---------- */
 
-body {
+body.thankyou {
     background-color: #f5f5dc; /* Dourado suave */
     display: flex;
     justify-content: center;

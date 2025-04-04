@@ -1,39 +1,50 @@
-/* ---------- Estilo para a página de agradecimento ---------- */
-
-body.thankyou {
-    background-color: #f5f5dc; /* Dourado suave */
+/* Fundo elegante para a página de agradecimento */
+body {
+    background-color: #1c1c1c; /* Preto suave para destacar o dourado */
+    color: #fff;
+    font-family: "Georgia", serif; /* Fonte elegante */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Poppins', sans-serif; /* Fonte estilosa */
+    padding: 0;
 }
 
-/* Caixa centralizada */
-.container {
-    background: linear-gradient(135deg, #FFD700, #DAA520); /* Degradê dourado */
-    color: black;
-    text-align: center;
-    padding: 40px;
+/* Caixa centralizada para a mensagem */
+.thankyou-container {
+    background: linear-gradient(135deg, #d4af37, #b8860b); /* Degradê dourado */
+    padding: 30px;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.5); /* Brilho dourado */
+    text-align: center;
+    max-width: 500px;
 }
 
-/* Botão estiloso */
-.btn {
+/* Texto estilizado */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff; /* Branco para destacar no dourado */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estiliza um botão de voltar */
+.back-button {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 18px;
     font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #8b6508; /* Marrom que combina com dourado */
     border-radius: 8px;
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
-.btn:hover {
-    background-color: #333;
+/* Efeito ao passar o mouse */
+.back-button:hover {
+    background-color: #a67c00;
+    transform: scale(1.05);
 }

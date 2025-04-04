@@ -54,39 +54,3 @@ body {
   input[type="submit"]:hover {
     background-color: #218838;
  }
-    body.thankyou {
-    background-color: #f5f5dc; /* Dourado suave */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-.container {
-    background: linear-gradient(135deg, #FFD700, #DAA520); /* Degradê dourado */
-    color: black;
-    text-align: center;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
-}
-
-/* Botão de voltar ao início */
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #333;
-  }

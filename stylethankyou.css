@@ -1,7 +1,7 @@
 /* Estilo geral para a página de agradecimento */
 body {
     background-color: #b8860b; /* Fundo dourado */
-    color: black; /* Alterado para preto */
+    color: black; /* Cor do texto preto */
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
@@ -36,5 +36,4 @@ body {
 .back-button:hover {
     background-color: #f0e68c; /* Dourado mais claro */
     color: #000;
-}
 }

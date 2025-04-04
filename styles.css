@@ -1,71 +1,112 @@
-/* Define o fundo da página. Substitua o URL abaixo pelo caminho da sua imagem */
+/* Define o fundo da página com uma imagem repetida */
 body {
     background-image: url(logoassembleia.png); /* INSIRA AQUI O CAMINHO DA SUA IMAGEM */
-    background-size: auto;
-    background-repeat: repeat;
     background-size: 150px 150px;
+    background-repeat: repeat;
     background-position: top left;
     font-family: Arial, sans-serif;
-    margin: 10px;
+    margin: 0;
     padding: 0;
-  }
-  
-  /* Container centralizado para o formulário com fundo semi-transparente */
-  .container {
-    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Estiliza o contêiner do formulário */
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
     max-width: 500px;
     margin: 50px auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  h2 {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título centralizado */
+h2 {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  label {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estiliza os rótulos */
+label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-  }
-  
-  input[type="text"],
-  select {
+    color: #222;
+}
+
+/* Estiliza os campos de entrada e o seletor */
+input[type="text"],
+input[type="tel"],
+select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  /* Estilizando o botão de envio corretamente */
-#submitBtn, input[type="submit"] {
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+/* Efeito ao focar nos campos de entrada */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estiliza o botão de envio */
+#submitBtn {
     width: 100%;
-    background: linear-gradient(135deg, #000, #333); /* Degradê elegante */
-    color: white;
     padding: 12px 24px;
+    background: linear-gradient(135deg, #28a745, #218838);
     border: none;
-    border-radius: 10px;
+    color: white;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 8px;
     transition: 0.3s ease-in-out;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Efeito ao passar o mouse */
-#submitBtn:hover, input[type="submit"]:hover {
-    background: linear-gradient(135deg, #222, #444);
+#submitBtn:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
     transform: scale(1.05);
 }
 
 /* Estilo do botão quando está desativado */
-#submitBtn:disabled, input[type="submit"]:disabled {
-    background: linear-gradient(135deg, #555, #777);
+#submitBtn:disabled {
+    background: linear-gradient(135deg, #6c757d, #5a6268);
     color: #ddd;
     cursor: not-allowed;
     opacity: 0.9;
     transform: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #submitBtn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 }

@@ -48,3 +48,12 @@ h1 {
     background-color: #a67c00;
     transform: scale(1.05);
 }
+/* Adiciona uma borda preta ao redor das letras */
+.text-outline {
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+}
+}

@@ -1,53 +1,43 @@
-/* Fundo elegante para a página de agradecimento */
+/* Estilo geral para a página de agradecimento */
 body {
-    background-color: #1c1c1c; /* Preto suave para destacar o dourado */
-    color: #fff;
-    font-family: "Georgia", serif; /* Fonte elegante */
+    background-color: #b8860b; /* Fundo dourado */
+    color: white;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 0;
+    text-align: center;
 }
 
-/* Caixa centralizada para a mensagem */
+/* Container centralizado */
 .thankyou-container {
-    background: linear-gradient(135deg, #d4af37, #b8860b); /* Degradê dourado */
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.5); /* Brilho dourado */
-    text-align: center;
+    background-color: #8b6508; /* Tom mais escuro de dourado */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 500px;
 }
 
-/* Texto estilizado */
-h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #fff; /* Branco para destacar no dourado */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-/* Estiliza um botão de voltar */
+/* Estilo do botão de voltar */
 .back-button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    font-size: 18px;
-    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #b8860b;
     text-decoration: none;
-    color: #fff;
-    background-color: #8b6508; /* Marrom que combina com dourado */
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-/* Efeito ao passar o mouse */
 .back-button:hover {
-    background-color: #a67c00;
-    transform: scale(1.05);
+    background-color: #f0e68c; /* Dourado mais claro */
+    color: #000;
 }
+
 /* Adiciona uma borda preta ao redor das letras */
 .text-outline {
     text-shadow: 
@@ -55,5 +45,4 @@ h1 {
          2px -2px 0 #000,
         -2px  2px 0 #000,
          2px  2px 0 #000;
-}
 }

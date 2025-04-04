@@ -1,4 +1,4 @@
-/* Define o fundo da página com uma imagem repetida */
+/* Fundo da página com repetição da imagem */
 body {
     background-image: url(logoassembleia.png); /* INSIRA AQUI O CAMINHO DA SUA IMAGEM */
     background-size: 150px 150px;
@@ -57,19 +57,21 @@ select:focus {
     outline: none;
 }
 
-/* Estiliza o botão de envio */
+/* BOTÃO - Mantém um design bonito sempre */
 #submitBtn {
     width: 100%;
     padding: 12px 24px;
-    background: linear-gradient(135deg, #28a745, #218838);
+    background: linear-gradient(135deg, #28a745, #218838); /* Verde bonito */
     border: none;
     color: white;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     border-radius: 8px;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: inline-block;
 }
 
 /* Efeito ao passar o mouse */
@@ -78,13 +80,22 @@ select:focus {
     transform: scale(1.05);
 }
 
-/* Estilo do botão quando está desativado */
+/* Estilo do botão quando está desativado (evita que fique feio) */
 #submitBtn:disabled {
     background: linear-gradient(135deg, #6c757d, #5a6268);
     color: #ddd;
     cursor: not-allowed;
     opacity: 0.9;
     transform: none;
+}
+
+/* Estiliza a mensagem de contagem regressiva */
+#countdownMessage {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d9534f;
+    margin-top: 10px;
 }
 
 /* Responsividade para telas menores */

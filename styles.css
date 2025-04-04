@@ -53,9 +53,8 @@ body {
   
   input[type="submit"]:hover {
     background-color: #218838;
-  }
-  /* ---------- Estilo para a página de agradecimento ---------- */
-body.thankyou {
+
+      body.thankyou {
     background-color: #f5f5dc; /* Dourado suave */
     display: flex;
     justify-content: center;
@@ -90,4 +89,4 @@ body.thankyou {
 
 .btn:hover {
     background-color: #333;
-}
+  }

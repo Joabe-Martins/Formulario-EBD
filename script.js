@@ -4,14 +4,38 @@ const scriptURL = "https://script.google.com/macros/s/AKfycbzf43StZ37ZBn15D716GX
 
 const form = document.getElementById('myForm');
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault(); // Impede o comportamento padrão do formulário
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("myForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const countdownMessage = document.getElementById("countdownMessage");
 
-  // Envia os dados do formulário via fetch utilizando o método POST
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-      // Após o envio bem-sucedido, redireciona para a página de agradecimento
-      window.location.href = 'thankyou.html';
-    })
-    .catch(error => console.error('Erro!', error.message));
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Impede o envio imediato
+
+        // Desativa o botão
+        submitBtn.disabled = true;
+        let timeLeft = 30; // Tempo de bloqueio em segundos
+
+        // Atualiza a mensagem na tela
+        countdownMessage.textContent = `Aguarde ${timeLeft} segundos para enviar novamente.`;
+
+        // Inicia o contador regressivo
+        let countdown = setInterval(() => {
+            timeLeft--;
+            countdownMessage.textContent = `Aguarde ${timeLeft} segundos para enviar novamente.`;
+
+            if (timeLeft <= 0) {
+                clearInterval(countdown); // Para o contador
+                submitBtn.disabled = false; // Reativa o botão
+                countdownMessage.textContent = ""; // Limpa a mensagem
+            }
+        }, 1000);
+
+        // Envia os dados para o Google Sheets
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then(response => {
+                window.location.href = "thankyou.html"; // Redireciona após o envio
+            })
+            .catch(error => console.error("Erro!", error.message));
+    });
 });

@@ -54,7 +54,7 @@ body {
   input[type="submit"]:hover {
     background-color: #218838;
 
-      body.thankyou {
+    .body.thankyou {
     background-color: #f5f5dc; /* Dourado suave */
     display: flex;
     justify-content: center;

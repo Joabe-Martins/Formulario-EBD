@@ -37,13 +37,4 @@ body {
     background-color: #f0e68c; /* Dourado mais claro */
     color: #000;
 }
-
-/* Adiciona uma borda preta ao redor das letras */
-.text-outline {
-    text-shadow: 
-        -2px -2px 0 #000,  
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000;
-    color: black; /* Alterado para preto */
 }

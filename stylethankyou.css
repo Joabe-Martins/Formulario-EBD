@@ -1,7 +1,7 @@
 /* Estilo geral para a página de agradecimento */
 body {
     background-color: #b8860b; /* Fundo dourado */
-    color: white;
+    color: black; /* Alterado para preto */
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
@@ -45,4 +45,5 @@ body {
          2px -2px 0 #000,
         -2px  2px 0 #000,
          2px  2px 0 #000;
+    color: black; /* Alterado para preto */
 }

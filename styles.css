@@ -54,4 +54,31 @@ body {
   input[type="submit"]:hover {
     background-color: #218838;
   }
-  
+  /* Estilo bonito para o botão */
+#submitBtn {
+    background: linear-gradient(135deg, #000, #333); /* Degradê elegante */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito ao passar o mouse */
+#submitBtn:hover {
+    background: linear-gradient(135deg, #222, #444);
+    transform: scale(1.05);
+}
+
+/* Estilo do botão quando está desativado */
+#submitBtn:disabled {
+    background: linear-gradient(135deg, #555, #777); /* Mantém um degradê */
+    color: #ddd;
+    cursor: not-allowed;
+    opacity: 0.9;
+    transform: none; /* Evita a animação ao desativar */
+}

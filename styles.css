@@ -1,0 +1,57 @@
+/* Define o fundo da página. Substitua o URL abaixo pelo caminho da sua imagem */
+body {
+    background-image: url(logoassembleia.png); /* INSIRA AQUI O CAMINHO DA SUA IMAGEM */
+    background-size: auto;
+    background-repeat: repeat;
+    background-size: 150px 150px;
+    background-position: top left;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+  }
+  
+  /* Container centralizado para o formulário com fundo semi-transparente */
+  .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
